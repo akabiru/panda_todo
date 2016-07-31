@@ -1,0 +1,19 @@
+PATH
+  remote: ../panda
+  specs:
+    panda (0.1.0)
+      rack
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    rack (2.0.1)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  panda!
+
+BUNDLED WITH
+   1.11.2
