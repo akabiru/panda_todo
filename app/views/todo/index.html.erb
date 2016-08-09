@@ -1,0 +1,9 @@
+<h1>My Todos</h1>
+
+<% @todos.each do |todo| %>
+  <p><strong><%= todo.title %></strong> <em><%= todo.status %></em>
+    <a href="/todo/<%= todo.id %>" id="todo_<%= todo.id %>">Show</a> | <a href="/todo/<%= todo.id %>/edit">Edit</a>
+  </p>
+<% end %>
+
+<p><a href="/todo/new">New Todo</a></p>

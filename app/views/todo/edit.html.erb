@@ -1,0 +1,19 @@
+<h1>Edit Todo</h1>
+<form id="edit-todo" action="/todo/<%= @todo.id %>" method="post">
+  <input type="hidden" name="_method" value ="put" />
+  <p>
+    <label for="title">Title</label> <br>
+    <input type="text" name="title" value="<%= @todo.title %>">
+  </p>
+  <p>
+    <label for="body">Body</label> <br>
+    <input type="text" name="body" value="<%= @todo.body %>">
+  </p>
+  <p>
+    <input type="radio" name="status" value="Pending" id="pending"
+      <%= 'checked' if @todo.status == 'Pending' %>> Pending <br>
+    <input type="radio" name="status" value="Done" id="done"
+      <%= 'checked' if @todo.status == 'Done' %>> Done <br>
+  </p>
+  <button type="submit">Update</button>
+</form>

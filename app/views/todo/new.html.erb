@@ -1,0 +1,16 @@
+<h1>New Todo</h1>
+<form id="new-todo" action="/todo" method="post">
+  <p>
+    <label for="title">Title</label> <br>
+    <input type="text" name="title">
+  </p>
+  <p>
+    <label for="body">Body</label> <br>
+    <input type="text" name="body">
+  </p>
+  <p>
+    <input type="radio" name="status" value="Pending" id="pending" checked> Pending <br>
+    <input type="radio" name="status" value="Done" id="done"> Done <br>
+  </p>
+  <button type="submit">Submit</button>
+</form>
